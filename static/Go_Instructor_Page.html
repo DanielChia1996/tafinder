@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--Puthypor Sengkeo
+    ID: 011646389-->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/Go_Instructor_Page.css">
+    <body class="main_body"></body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="scripts/BigDaddy.js"></script>
+    <script type="text/javascript">
+         // This is a jQuery convention to say that once all the files
+         // load, the function BigDaddy.start() should run.
+         // This function is defined in the BigDaddy.js
+         $(function () {
+              BigDaddy().start();
+         });
+    </script>
+</head>
+
+<body>
+      <header class="header">
+            <div class="header_welcome">Welcome Back</div>
+            <div class="instructor_name"></div>
+            <button class="button">
+                    <a href="index.html" id="log_out">Log Out</a>
+            </button>
+            <button class="add_course_button">
+                <a href="Next_Instructor_Page.html" id="add_course">Add Another Course?</a>
+            </button>
+            <button class="edit_button">
+                <a href="Edit_Instructor_Page.html" id="edit">Edit Profile</a>
+           </button>
+      </header>
+
+      <div class="big_body">
+            <div class="mytab">
+                    <div class="tab" role="tabpanel">
+                         <ul class="nav nav-tabs" role="tablist">
+                              <li class="tab1 active"> <a href="#homepage" role="tab" data-toggle="tab">Homepage</a></li>
+                               <li class="tab2"> <a href="#class" role="tab" data-toggle="tab">Show Class</a></li>             
+                         </ul>
+                    </div>
+                    <!-- Textboxes to allow instructor to assign a TA ---------------------------->
+                    <form id="assignTA" method="POST">
+                        <div class="course_info">
+                            <h3>Assign a TA</h3>
+                            <div class="course_name">
+                                <label class="labels">Course Name (eg CptS121): </label>
+                                <input class="course_name_input">
+                            </div>
+                            <div class="lab">
+                                <label class="labels">Lab Number (if applicable): </label>
+                                <input class="lab_input">
+                            </div>
+                            <div class="TAname">
+                                <label class="labels">TA's Name: </label>
+                                <input class="TAname_input">
+                            </div>
+                            <div class="TA_id">
+                                <label class="labels">TA's ID: </label>
+                                <input class="TA_id_input">
+                            </div>
+                        </div>
+                        <input type="submit" class="submit_assignTA" value="Save" id="submit">
+                        <button class="cancel_btn">
+                            <a href="Go_Instructor_Page.html">Cancel</a>
+                        </button>
+                    </form>
+                    <!-- ----------------------------------------------------------------------- -->
+
+                    <div class="tab-content tabs">
+                         <div role="tabpanel" class="tab-pane in active" id="homepage">
+                              <section class="classlist">
+                                   <article class="class_box" id="box1">
+                                        <div class="class_info">
+                                            <div class="course_name">Class Name</div>
+                                            <div class="lab">Lab: </div>
+                                            <!-- <div class="instructor">Taught by: Instructor</div> -->
+                                        </div>
+                                        <div class="class_button">
+                                            <button type="button" class="select_btn btn-primary" style="background-color: Red">Select</button>
+                                        </div>
+                                   </article>                
+                              </section>
+                         </div>
+                         <div role="tabpanel" class="tab-pane" id="class">
+                              <section class="showclass">
+                                   <article class="selected_class_box">
+                                        <div class="selected_prof">
+                                             <div class="selected_course_name">Name:</div>
+                                             <div class="selected_lab">Title:</div>
+                                             <div>Students who applied for this class</div>
+                                             <!-- <div class="selected_instructor">School:</div> -->
+                                        </div> 
+                                        <div class="delete">
+                                            <button class="pdelete_btn">
+                                                Delete
+                                            </button>
+                                        </div>                                   
+                                   </article>
+                                   <article class="student_list">
+                                        <div class="student">Students</div>
+                                        <div class="id">ID</div>
+                                   </article>       
+                              </section>
+                         </div>
+                    </div>
+               </div>
+            <!-- <div class="left_block">
+                    <h1>Courses you teach</h1>
+              </div>
+              <div class="right_block">
+                    <div class="selected_course">
+                        <h1>Selected Course</h1>
+                        <div class="course_teach">
+                            <div class="course_name">
+                                Cpts123
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TA">
+                        <h1>Students applying for TA</h1>
+                        <div class="student_box">
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                            <div class="student">
+                                <div class="student_name">
+                                    Student Name
+                                </div>
+                                <input type="submit" value="Select" class="select_TA_btn">
+                            </div>
+                        </div>
+                    </div>
+              </div> -->
+      </div>
+      
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Puthypor Sengkeo
+    ID: 011646389-->
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/Create_Instructor_Page.css">
+    <body class="main_body"></body>
+
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+           crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+           crossorigin="anonymous"></script>
+         <!-- Javascript -->
+         <script type="text/javascript" src="scripts/BigDaddy.js"></script>
+         <script type="text/javascript">
+              // This is a jQuery convention to say that once all the files
+              // load, the function BigDaddy.start() should run.
+              // This function is defined in the BigDaddy.js
+              $(function () {
+                   BigDaddy().start();
+              });
+         </script>
+</head>
+
+<body>
+    <header>
+        <div class="header">Fill in your information</div>
+    </header>
+
+    <form id="addInstructorInfoForm" method="POST">
+
+        <div class="create_instructor_body">
+            <div class="first_name">
+                <label class="labels">First Name:</label>
+                <input class="firstName_input input"> </input>
+            </div>
+            <div class="last_name">
+                <label class="labels">Last Name:</label>
+                <input class="lastName_input input"> </input>
+            </div>
+            <div class="wsu_id">
+                <label class="labels">WSU ID:</label>
+                <input class="ID_input input"> </input>
+            </div>
+            <div class="email">
+                <label class="labels">Email:</label>
+                <input class="email_input input"> </input>
+            </div>
+            <div class="password">
+                <label class="labels">Password:</label>
+                <input type="password" class="password_input input"> </input>
+            </div>
+            <!-- <div class="phone">
+                <label class="labels">Phone:</label>
+                <input class="phone_input input"> </input>
+            </div>
+            <div class="major">
+                <label class="labels">Major:</label>
+                <input class="major_input input"> </input>
+            </div> -->
+    
+            <!-- POST STUDENT INFO BUTTON -->
+            <!-- IF YOU WANT TO USE INPUT
+                YOU HAVE TO CREATE AN ONCLICK EVENT IN JAVASCRIPT 
+                THAT WILL TAKE THE DATA THAT WERE GIVEN, STORE IT, THEN
+                GO TO NEW PAGE --> 
+                <input type="submit" class="submit_instructorInfo_input" value="Next" id="submit">
+                <!-- <button type="submit" id="submit" class="submit_instructorInfo_input">
+                        <a href="Next_Instructor_Page.html">
+                            Next
+                        </a>
+                </button> -->
+                <!-- CANCEL BUTTON -->
+                <button type="button" class="cancel_instructorInfo">
+                        <a href="Instructor_Page.html">
+                            Cancel
+                        </a>
+                </button>
+    
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.main_body{
+        background: darksalmon;
+}
+/*Header styling vvvvvvvvvvvvvvvvvvvvvv*/ 
+header{
+        background-color: pink;
+}
+.header{
+        text-align: center;
+        font-size: 200%;
+}
+/*Header styling ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*Body styling vvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.course_preference{
+        background-color: purple;
+}
+div, .course_preference{
+        height: 50%;
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 10px;
+        margin-top: 20px;
+
+}
+.save_btn{
+        float: right;
+}     
+
+.class_button{
+        width: 130px;
+}
+.class_info{
+        width: calc(100% - 80px);
+        margin-left: 40px;
+}
+
+.class_box{
+        display: flex;
+        flex-direction: row;
+        background-color: lightslategray;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-right: 10px;;
+} 
+.selected_class_box{
+        display: flex;  
+}            
+/*Body styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
+}

@@ -1,0 +1,45 @@
+.main_body{
+        background: darksalmon;
+}
+
+/*Header styling vvvvvvvvvvvvvvvvvvvvvv*/ 
+header{
+        background-color: pink;
+}
+.header{
+        text-align: center;
+        font-size: 300%;
+        padding: 20px;
+}
+/*Header styling ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*Body styling vvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.create_instructor_body{
+        margin-left: -1px;
+        background-color: purple;
+}
+div, .create_instructor_body{
+        height: 50%;
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 10px;
+        margin-top: 20px;
+}
+div, .input{
+        margin-left: 10px;
+}
+.first_name, .password, .last_name, .wsu_id, .email, .phone, .major{
+        display: flex;
+}
+#submit{
+        float: right;
+}
+/*Body styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
+}

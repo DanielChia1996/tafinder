@@ -1,0 +1,34 @@
+.main_body{
+        background: darksalmon;
+}
+/*Header styling vvvvvvvvvvvvvvvvvvvvvv*/ 
+header{
+        background-color: pink;
+}
+.header{
+        padding: 20px;
+        text-align: center;
+        font-size: 200%;
+}
+/*Header styling ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*Body styling vvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.go_btn{
+        margin: 5%;
+        margin-left: 45%;
+        display: block;
+}
+.body{
+        text-align: center;
+        padding: 50px;
+        font-size: 200%;
+}
+/*Body styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
+}

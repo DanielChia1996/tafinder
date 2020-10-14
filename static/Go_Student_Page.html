@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Puthypor Sengkeo
+    ID: 011646389-->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/Go_Student_Page.css">
+    <body class="main_body"></body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="scripts/BigDaddy.js"></script>
+    <script type="text/javascript">
+         // This is a jQuery convention to say that once all the files
+         // load, the function BigDaddy.start() should run.
+         // This function is defined in the BigDaddy.js
+         $(function () {
+              BigDaddy().start();
+         });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_welcome">Welcome Back</div>
+        <div class="student_name"></div>
+        <button class="log_out_button">
+            <a href="index.html" id="log_out">Log Out</a>
+        </button>
+          <button class="edit_button">
+               <a href="Edit_Student_Page.html" id="edit">Edit Profile</a>
+          </button>
+        <!-- <form id="editStudentInfoForm">
+          <button class="edit_button">
+               <a 
+              href="Ed" id="edit">Edit Profile</a>
+          </button>
+        </form> -->
+    </header>
+
+    <div class="big_body">
+            <div class="left_block">
+                    <div class="mytab">
+                            <div class="tab" role="tabpanel">
+                                 <ul class="nav nav-tabs" role="tablist">
+                                      <li class="tab1 active"> <a href="#homepage" role="tab" data-toggle="tab">Homepage</a></li>
+                                       <li class="tab2"> <a href="#class" role="tab" data-toggle="tab">Show Class</a></li>             
+                                 </ul>
+                            </div>
+                            <div class="tab-content tabs">
+                                 <div role="tabpanel" class="tab-pane in active" id="homepage">
+                                      <section class="classlist">
+                                           <article class="class_box" id="box1">
+                                                <div class="class_info">
+                                                    <div class="course_name">Class Name</div>
+                                                    <div class="lab">Lab: </div>
+                                                    <div>Application Status:</div>
+                                                    <div class="status">Status</div>
+                                                    <!-- <div class="instructor">Taught by: Instructor</div> -->
+                                                </div>
+                                                <div class="class_button">
+                                                    <button type="button" class="student_select_btn btn-primary" style="background-color: Red">Select</button>
+                                                </div>
+                                           </article>                
+                                      </section>
+                                 </div>
+                                 <div role="tabpanel" class="tab-pane" id="class">
+                                      <section class="showclass">
+                                             <article class="selected_class_box">
+                                                  <div class="selected_prof">
+                                                       <div class="selected_course_name">Name:</div>
+                                                       <div class="selected_lab">Title:</div>
+                                                       <div class="selected_status">Status</div>
+                                                       <!-- <div class="selected_instructor">School:</div> -->
+                                                  </div>   
+                                                  <div class="delete">
+                                                       <button class="delete_btn">Delete</button>
+                                                  </div>  
+                                             </article>                                     
+                                      </section>
+                                 </div>
+                            </div>
+                       </div>      
+            </div>
+            <div class="right_block">
+                <h1>Apply for another course?</h1>
+                <div class="apply_another_course">
+                    <button class="another_course_btn">
+                        <a href="Next_Student_Page.html">Apply</a>
+                    </button>
+                </div>
+            </div>
+      </div>
+</body>
+
+</html>

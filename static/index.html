@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>BigDaddy</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+          <body class="head_body"></body>
+                     <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+           crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+           crossorigin="anonymous"></script>
+
+         <!-- Javascript -->
+         <script type="text/javascript" src="scripts/BigDaddy.js"></script>
+         <script type="text/javascript">
+              // This is a jQuery convention to say that once all the files
+              // load, the function BigDaddy.start() should run.
+              // This function is defined in the BigDaddy.js
+              $(function () {
+                   BigDaddy().start();
+              });
+         </script>
+</head>
+<body>
+     <header>
+          <a href="Student_Page.html" class="btn btn-primary btn-lg" id="student_btn"><strong>I am a Student</strong></a>
+          <a href="Instructor_Page.html" class="btn btn-primary btn-lg" id="instructor_btn"><strong>I am an Instructor</strong></a>
+
+          <div class="header">
+               <h1>TA Finder</h1>   
+          </div>
+     </header>
+
+     <div class="mytab">
+          <div class="tab" role="tabpanel">
+               <ul class="nav nav-tabs" role="tablist">
+                    <li class="tab1 active"> <a href="#homepage" role="tab" data-toggle="tab">Homepage</a></li>
+                     <li class="tab2"> <a href="#class" role="tab" data-toggle="tab">Show Class</a></li>             
+               </ul>
+          </div>
+          <div class="tab-content tabs">
+               <div role="tabpanel" class="tab-pane in active" id="homepage">
+                    <section class="classlist">
+                         <article class="class_box" id="box1">
+                              <div class="class_info">
+                                  <div class="course_name">Class Name</div>
+                                  <div class="lab">Lab: </div>
+                                  <!-- <div class="instructor">Taught by: Instructor</div> -->
+                              </div>
+                              <div class="class_button">
+                                  <button type="button" class="select_btn btn-primary" style="background-color: Red">Select</button>
+                              </div>
+                         </article>                
+                    </section>
+               </div>
+               <div role="tabpanel" class="tab-pane" id="class">
+                    <section class="showclass">
+                         <article class="showclass">
+                              <div class="selected_prof">
+                                   <div class="selected_course_name">Name:</div>
+                                   <div class="selected_lab">Title:</div>
+                                   <div>Students who applied for this class</div>
+                                   
+                                   <!-- <div class="selected_instructor">School:</div> -->
+                              </div>                                     
+                         </article>  
+                         <article class="student_list">
+                              <div class="student">student</div>
+                         </article>     
+                    </section>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Puthypor Sengkeo
+    ID: 011646389-->
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/Signin_Instructor_Page.css">
+    <body class="main_body"></body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="scripts/BigDaddy.js"></script>
+    <script type="text/javascript">
+         // This is a jQuery convention to say that once all the files
+         // load, the function BigDaddy.start() should run.
+         // This function is defined in the BigDaddy.js
+         $(function () {
+              BigDaddy().start();
+         });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header"><h1>Please Sign In</h1></div>
+    </header>  
+    
+    <form id="sign_in_form">
+        <div class="body">
+            <div class="username">
+                <h1>Username:</h1>
+                <input type="labels" class="name">
+            </div>
+            <div class="password">
+                <h1>Password:</h1>
+                <input type="password" class="password_input">
+            </div>  
+        </div>
+        <button class="sign_in_btn">
+            <a href="Go_Instructor_Page.html">
+                Sign In
+            </a>
+        </button>
+    </form>
+</body>
+
+</html>
